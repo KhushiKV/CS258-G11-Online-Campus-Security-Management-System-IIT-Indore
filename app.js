@@ -16,7 +16,8 @@ var express = require("express"),
 
 var moment = require("moment");
 
-var url =process.env.DATABASEURL|| "mongodb://localhost/LeaveApp";
+// var url =process.env.DATABASEURL|| "mongodb://localhost/LeaveApp";
+var url =process.env.DATABASEURL|| "mongodb+srv://neha:nehajakhar@cluster0.xmner.mongodb.net/Main-security-system?retryWrites=true&w=majority";
 mongoose
   .connect(url, {
     useNewUrlParser: true,
@@ -47,6 +48,7 @@ app.use(
 );
 app.use(passport.initialize());
 app.use(passport.session());
+
 // passport.use(new LocalStrategy(Student.authenticate()));
 // passport.use(
 //   new LocalStrategy(function(username, password, done) {
@@ -85,6 +87,7 @@ app.use(passport.session());
 //     }
 //   })
 // );
+
 app.use(flash());
 app.use((req, res, next) => {
   //   res.locals.currentUser = req.user;

@@ -5,7 +5,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Banasthali</title>
+    <title>Security - IIT INDORE</title>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -22,12 +22,14 @@
     <link rel="stylesheet" href="/stylesheets/app.css" />
   </head>
   <body data-spy="scroll" data-target="#mainNavbar" data-offset="10">
+
+
     <nav
       id="mainNavbar"
       class="navbar navbar-default navbar-expand-lg navbar-dark navbar-fixed-top"
     >
       <div class="container">
-        <a class="navbar-brand" href="/">L.M.S</a>
+        <a class="navbar-brand" href="/">SECURES</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -59,7 +61,8 @@
 
             <%}%> <% if(!user){%>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact </a>
+              <!-- have to add section of content in the landing page -->
+              <a class="nav-link" href="#contact">Contact </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#scrollspy1">About Us </a>
@@ -81,12 +84,13 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
-                  <a class="dropdown-item" href="/student/login">Student</a>
+                  <!-- have to change name of routes -->
+                  <a class="dropdown-item" href="/student/login">Employee</a>
                 </li>
-                <li><a class="dropdown-item" href="/hod/login">HOD</a></li>
+                <!-- <li><a class="dropdown-item" href="/hod/login">HOD</a></li> -->
 
                 <li>
-                  <a class="dropdown-item" href="/warden/login">Warden</a>
+                  <a class="dropdown-item" href="/warden/login">Office</a>
                 </li>
               </ul>
             </li>
@@ -95,6 +99,8 @@
         </div>
       </div>
     </nav>
+
+
     <div class="container">
       <% if(error && error.length >0){%>
       <div
